@@ -1,0 +1,44 @@
+---
+import Heading from "./Heading.astro";
+
+const heading = "Some things I can help you with";
+
+const sections = [
+  "Family-Based Petitions",
+  "Naturalization",
+  "Adjustment of Status",
+  "Motions to Reopen",
+];
+const sectionsText = [
+  "Assisting U.S. citizens and lawful permanent residents in petitioning for relatives.",
+  "Advising and representing lawful permanent residents in the citizenship process, including USCIS interviews.",
+  "Representing clients in applications for lawful permanent residency within the U.S.",
+  "Preparing and filing motions when new facts or evidence warrant reconsideration of a prior decision.",
+];
+---
+
+<div class="mb-12 bg-stone-100 dark:bg-slate-800">
+  <div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
+    <Heading heading={heading} />
+    <div
+      class="space-y-8 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-12 md:space-y-0"
+    >
+      {
+        sections.map((section) => {
+          return (
+            <div class="flex flex-col">
+              <div class="mt-6">
+                <h3 class="text-lg font-medium text-gray-900 dark:text-white">
+                  {sections[sections.indexOf(section)]}
+                </h3>
+                <p class="mb-8 mt-2 text-lg text-gray-700 dark:text-gray-400">
+                  {sectionsText[sections.indexOf(section)]}
+                </p>
+              </div>
+            </div>
+          );
+        })
+      }
+    </div>
+  </div>
+</div>

@@ -1,7 +1,7 @@
 {
   "owner": "Vic",
   "siteName": "Vic's Law Firm",
-  "siteDescription": "Vic's Law Firm for legal services",
+  "siteDescription": "Comprehensive Immigration Legal Services for Families and Individuals",
   "about": "I am a Filipino American attorney who grew up in the Bay Area, and I bring both personal and professional experience to my practice.",
   "contact": {
     "email": "WLREMO.LAW@gmail.com",
@@ -14,8 +14,16 @@
       "href": "/"
     },
     {
-      "title": "Projects",
+      "title": "About",
+      "href": "/about"
+    },
+    {
+      "title": "services", 
       "href": "/projects"
+    },
+    {
+      "title": "Testimonials",
+      "href": "/testimonials"
     },
     {
       "title": "Contact",
@@ -28,7 +36,7 @@
       "href": "https://github.com/leabs"
     },
     {
-      "title": "YouTube",
+      "title": "Yelp",
       "href": "https://www.youtube.com/@shadowstack"
     },
     {
@@ -36,7 +44,7 @@
       "href": "https://www.linkedin.com/in/stevenleabo/"
     },
     {
-      "title": "CodePen",
+      "title": "Google",
       "href": "https://codepen.io/shadowstack/pens/popular"
     }
   ],

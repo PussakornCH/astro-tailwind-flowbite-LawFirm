@@ -1,11 +1,11 @@
 {
-  "owner": "Moss",
-  "siteName": "Moss's Portfolio",
-  "siteDescription": "John Smith's Portfolio for potential employers",
-  "about": "I'm a web developer from Anytown, USA. I like to build things with HTML, CSS, and JavaScript.",
+  "owner": "Vic",
+  "siteName": "Vic's Law Firm",
+  "siteDescription": "Vic's Law Firm for legal services",
+  "about": "I am a Filipino American attorney who grew up in the Bay Area, and I bring both personal and professional experience to my practice.",
   "contact": {
-    "email": "bob@aol.com",
-    "phone": "555-555-5555",
+    "email": "WLREMO.LAW@gmail.com",
+    "phone": "408-461-8871",
     "address": "1234 Main St. Anytown, USA 12345"
   },
   "pages": [

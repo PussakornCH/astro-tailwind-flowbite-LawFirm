@@ -1,0 +1,18 @@
+---
+import Layout from "../layouts/Layout.astro";
+import data from "../data/site.json";
+
+import HeaderSmall from "../components/HeaderSmall.astro";
+import CTA2 from "../components/CTA2.astro";
+const title = "About";
+const subtitle = "Learn more about our firm's excellent attorney.";
+---
+<Layout title="About">
+  <div>
+    <HeaderSmall title={title} subtitle={subtitle} />
+  </div>
+  <main>
+    <CTA2 />
+  </main>
+
+</Layout>

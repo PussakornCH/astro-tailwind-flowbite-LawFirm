@@ -2,9 +2,75 @@
 import Layout from "../layouts/Layout.astro";
 import data from "../data/site.json";
 
-import Header from "../components/Header.astro";
-import CTA from "../components/CTA.astro";
-import FeatureList from "../components/FeatureList.astro";
-import Timeline from "../components/Timeline.astro";
-import FeatureList2 from "../components/FeatureList2.astro";
+import HeaderSmall from "../components/HeaderSmall.astro";
+import CTA2 from "../components/CTA2.astro";
+import Blockquote from "../components/Blockquote.astro";
+import Rating from "../components/Rating.astro";
+import SocialProof from "../components/SocialProof.astro";
+import CustomerLogos from "../components/CustomerLogos.astro";
+const title = "Testimonials";
+const subtitle = "See our clients' success stories and experiences.";
 ---
+<Layout title="Testimonials">
+  <div>
+    <HeaderSmall title={title} subtitle={subtitle} />
+  </div>
+  <main>
+
+    <section class="py-12 bg-white dark:bg-gray-900">
+      <div class="max-w-5xl mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          {
+            [
+              {
+                text: "Attorney P helped me navigate a difficult immigration case with compassion and sharp legal skill. We won our hearing and couldn't be happier.",
+                name: "Maria G.",
+                title: "Client",
+                rating: 5,
+              },
+              {
+                text: "Professional, clear, and always available. Highly recommend for family and criminal matters.",
+                name: "John S.",
+                title: "Client",
+                rating: 5,
+              },
+              {
+                text: "Efficient and knowledgeable. My case was handled quickly and with care.",
+                name: "Lina R.",
+                title: "Client",
+                rating: 4,
+              },
+              {
+                text: "I appreciated the thorough communication and the attention to detail throughout my case.",
+                name: "Aaron K.",
+                title: "Client",
+                rating: 5,
+              }
+            ].map((t) => (
+              <article class="p-6 bg-stone-50 dark:bg-slate-800 rounded-lg shadow-sm">
+                <div class="mb-4">
+                  <Blockquote text={t.text} />
+                </div>
+                <div class="flex items-center justify-between mt-4">
+                  <div class="flex items-center space-x-3">
+                    <img src="/assets/logo.png" alt="avatar" class="w-10 h-10 rounded-full" />
+                    <div>
+                      <p class="font-semibold text-gray-900 dark:text-white">{t.name}</p>
+                      <p class="text-sm text-gray-500 dark:text-gray-400">{t.title}</p>
+                    </div>
+                  </div>
+                  <Rating rating={t.rating} />
+                </div>
+              </article>
+            ))
+          }
+        </div>
+      </div>
+    </section>
+
+    <SocialProof />
+    <CustomerLogos />
+  </main>
+
+
+</Layout>

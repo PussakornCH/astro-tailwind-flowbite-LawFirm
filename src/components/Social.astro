@@ -2,29 +2,59 @@
 import data from "../data/site.json";
 import Heading from "../components/Heading.astro";
 
-const heading = "Request Your Consultation"
+const heading = "Contact Us Today for Trusted Immigration Guidance"
 ---
 
 <div class="w-full text-center py-12 bg-white dark:bg-slate-700 rounded-t-lg">
   <Heading heading={heading} />
-  <ul
-    class="flex flex-wrap items-center justify-center text-gray-900 dark:text-white"
-  >
+
+  <!-- Contact Info Section -->
+  <div class="flex flex-col md:flex-row justify-center items-center gap-12 text-gray-900 dark:text-white mt-6">
+    <!-- Address -->
+    <div class="text-center md:text-left">
+      <h3 class="font-semibold mb-2">Address</h3>
+      <p>{data.contact.address}</p>
+    </div>
+
+    <!-- Phone -->
+    <div class="text-center md:text-left">
+      <h3 class="font-semibold mb-2">Phone</h3>
+      <p>
+        <a href={`tel:${data.contact.phone}`} class="hover:underline">
+          {data.contact.phone}
+        </a>
+      </p>
+    </div>
+
+    <!-- Email -->
+    <div class="text-center md:text-left">
+      <h3 class="font-semibold mb-2">Email</h3>
+      <p>
+        <a href={`mailto:${data.contact.email}`} class="hover:underline">
+          {data.contact.email}
+        </a>
+      </p>
+    </div>
+  </div>
+
+  <!-- Social Links -->
+  <div class="text-center mt-3 mb-3">
+    <h3 class="font-semibold text-gray-900 dark:text-white mb-2">Follow Us though Social Media</h3>
+    <ul class="flex flex-wrap items-center justify-center text-gray-900 dark:text-white">
     {
-      data.social.map((item) => {
-        return (
-          <li>
-            <a
-              href={item.href}
-              target="_blank"
-              rel="noopener noreferrer"
-              class="mr-4 hover:underline md:mr-6 "
-            >
-              {item.title}
-            </a>
-          </li>
-        );
-      })
+      data.social.map((item) => (
+        <li>
+          <a
+            href={item.href}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="mr-4 hover:underline md:mr-6"
+          >
+            {item.title}
+          </a>
+        </li>
+      ))
     }
-  </ul>
+    </ul>
+  </div>
 </div>

@@ -1,15 +1,36 @@
 ---
 import Button from '../components/Button.astro';
+import { Image } from 'astro:assets'; 
+import lightImage from "../assets/map.png"; 
 ---
 <form>
+    <div class="mb-6">
+      <label for="fname" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">First Name</label>
+      <input type="text" id="fname" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="John" required>
+    </div>
+    <div class="mb-6">
+      <label for="lname" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Last Name</label>
+      <input type="text" id="lname" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Doe" required>
+    </div>
+    <div class="mb-6">
+      <label for="phone" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Phone</label>
+      <input type="text" id="phone" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="012-345-6789" required>
+    </div>
     <div class="mb-6">
       <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your email</label>
       <input type="email" id="email" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="name@flowbite.com" required>
     </div>
     <div class="mb-6">
-      <label for="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your Message</label>
+      <label for="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">How can we help you?</label>
       <input type="text" id="message" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required>
     </div>
     <Button text="Send" />
-  </form>
+
+
+</form>
+  <section class="mb-12 bg-stone-100 dark:bg-slate-800">
+    <div class="flex justify-center py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
+        <Image src={lightImage} class="w-full dark:hidden border-solid border-2" alt="A description of my image." />
+    </div>
+  </section>
   

@@ -3,31 +3,30 @@ import Button from '../components/Button.astro';
 import { Image } from 'astro:assets'; 
 import lightImage from "../assets/map.png"; 
 ---
-<form>
+<form action="https://formsubmit.co/pchanpanichravee@ucsd.edu" method="POST">
+    <input type="hidden" name="_template" value="box">
+    <input type="hidden" name="_next" value="https://www.williamremolaw.com/contact">
+    <input type="hidden" name="_subject" value="New contact from Your Law Firm website!">
+    <input type="hidden" name="_autoresponse" value="Your message has been received! We will get back to you shortly.">
     <div class="mb-6">
-      <label for="fname" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">First Name</label>
-      <input type="text" id="fname" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="John" required>
+      <label for="name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Full name</label>
+      <input type="text" name="name" id="name" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="John Doe" required>
     </div>
     <div class="mb-6">
-      <label for="lname" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Last Name</label>
-      <input type="text" id="lname" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Doe" required>
-    </div>
-    <div class="mb-6">
-      <label for="phone" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Phone</label>
-      <input type="text" id="phone" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="012-345-6789" required>
+      <label for="phone" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Phone number (optional)</label>
+      <input type="text" name="phone" id="phone" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="012-345-6789">
     </div>
     <div class="mb-6">
       <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your email</label>
-      <input type="email" id="email" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="name@flowbite.com" required>
+      <input type="email" name="email" id="email" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="example@gmail.com" required>
     </div>
     <div class="mb-6">
       <label for="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">How can we help you?</label>
-      <input type="text" id="message" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required>
+      <input type="text" name="message" id="message" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required>
     </div>
-  <Button text="Send" href="#" />
-
-
+  <Button text="Send" type="submit" />
 </form>
+
   <section class="mb-12 bg-stone-100 dark:bg-slate-800">
     <div class="flex justify-center py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
         <Image src={lightImage} class="w-full dark:hidden border-solid border-2" alt="A description of my image." />

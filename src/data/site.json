@@ -1,6 +1,6 @@
 {
   "owner": "Norah Vincent",
-  "siteName": "Vincent's Law Firm",
+  "siteName": "Law Firm of William Remo",
   "siteDescription": "Comprehensive Immigration Legal Services for Families and Individuals",
   "about": "I am a Filipino American attorney who grew up in the Bay Area, and I bring both personal and professional experience to my practice.",
   "contact": {
@@ -46,7 +46,7 @@
   ],
   "projects": [
     {
-      "projectTitle": "Project 1",
+      "projectTitle": "Service 1",
       "href": "project/one",
       "about": "Database of books and reviews from users complete with auth and comments and so much more!!!",
       "type": "Python, Django, HTML, CSS",
@@ -54,7 +54,7 @@
       "image": "https://flowbite.s3.amazonaws.com/blocks/marketing-ui/cta/cta-dashboard-mockup.svg"
     },
     {
-      "projectTitle": "Project 2",
+      "projectTitle": "Service 2",
       "href": "project/two",
       "about": "Video dashboard using JavaScript that allows user to build and share a layout of videos from YouTube.",
       "repo": "https://github.com",
@@ -63,7 +63,7 @@
       "featured": true
     },
     {
-      "projectTitle": "Project 3",
+      "projectTitle": "Service 3",
       "href": "project/three",
       "about": "Some info about this project here, please add something here for this project ok here.",
       "type": "PHP, MySQL, HTML, CSS",
@@ -71,7 +71,7 @@
       "image": "../assets/screen2.png"
     },
     {
-      "projectTitle": "Project 4",
+      "projectTitle": "Service 4",
       "href": "project/four",
       "about": "Some info about project 4 I'm not sure haha ok see ya",
       "type": "WordPress",

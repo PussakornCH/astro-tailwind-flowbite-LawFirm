@@ -33,15 +33,15 @@
   "social": [
     {
       "title": "GitHub",
-      "href": "https://github.com/PussakornCH/astro-tailwind-flowbite-LawFirm"
+      "href": "https://github.com"
     },
     {
       "title": "Yelp",
-      "href": "https://www.yelp.com/biz/law-offices-of-adam-v-nguyen-westminster-6?osq=Law+Firms+Norah+Vincent&override_cta=Request+a+consultation"
+      "href": "https://www.yelp.com"
     },
     {
       "title": "Google",
-      "href": "https://codepen.io/shadowstack/pens/popular"
+      "href": "https://www.google.com"
     }
   ],
   "projects": [

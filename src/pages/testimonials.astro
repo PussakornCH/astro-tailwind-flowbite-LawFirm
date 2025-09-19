@@ -6,8 +6,37 @@ import HeaderSmall from "../components/HeaderSmall.astro";
 import Blockquote from "../components/Blockquote.astro";
 import Rating from "../components/Rating.astro";
 import SocialProof from "../components/SocialProof.astro";
-import CustomerLogos from "../components/CustomerLogos.astro";
 const title = "Testimonials";
+const testimonials = [
+  {
+    topic: "Immigration Case Success",
+    text: "Attorney P helped me navigate a difficult immigration case with compassion and sharp legal skill. We won our hearing and couldn't be happier.",
+    name: "Maria G.",
+    title: "Client",
+    rating: 5,
+  },
+  {
+    topic: "Clear Communication",
+    text: "Professional, clear, and always available. Highly recommend for family and criminal matters.",
+    name: "John S.",
+    title: "Client",
+    rating: 5,
+  },
+  {
+    topic: "Efficient Case Handling",
+    text: "Efficient and knowledgeable. My case was handled quickly and with care.",
+    name: "Lina R.",
+    title: "Client",
+    rating: 4,
+  },
+  {
+    topic: "Attention to Detail",
+    text: "I appreciated the thorough communication and the attention to detail throughout my case.",
+    name: "Aaron K.",
+    title: "Client",
+    rating: 5,
+  },
+];
 const subtitle = "See our clients' success stories and experiences.";
 ---
 <Layout title="Testimonials">
@@ -20,39 +49,13 @@ const subtitle = "See our clients' success stories and experiences.";
       <div class="max-w-5xl mx-auto px-4">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
           {
-            [
-              {
-                text: "Attorney P helped me navigate a difficult immigration case with compassion and sharp legal skill. We won our hearing and couldn't be happier.",
-                name: "Maria G.",
-                title: "Client",
-                rating: 5,
-              },
-              {
-                text: "Professional, clear, and always available. Highly recommend for family and criminal matters.",
-                name: "John S.",
-                title: "Client",
-                rating: 5,
-              },
-              {
-                text: "Efficient and knowledgeable. My case was handled quickly and with care.",
-                name: "Lina R.",
-                title: "Client",
-                rating: 4,
-              },
-              {
-                text: "I appreciated the thorough communication and the attention to detail throughout my case.",
-                name: "Aaron K.",
-                title: "Client",
-                rating: 5,
-              }
-            ].map((t) => (
+            testimonials.map((t) => (
               <article class="p-6 bg-stone-50 dark:bg-slate-800 rounded-lg shadow-sm">
                 <div class="mb-4">
-                  <Blockquote text={t.text} />
+                  <Blockquote text={t.topic} text2={t.text} />
                 </div>
                 <div class="flex items-center justify-between mt-4">
                   <div class="flex items-center space-x-3">
-                    <img src="/assets/logo.png" alt="avatar" class="w-10 h-10 rounded-full" />
                     <div>
                       <p class="font-semibold text-gray-900 dark:text-white">{t.name}</p>
                       <p class="text-sm text-gray-500 dark:text-gray-400">{t.title}</p>
@@ -67,8 +70,15 @@ const subtitle = "See our clients' success stories and experiences.";
       </div>
     </section>
 
-    <SocialProof />
-    <CustomerLogos />
+    <!-- Message at the end -->
+    <section class="py-12 bg-gray-50 dark:bg-gray-800">
+      <div class="max-w-5xl mx-auto px-4">
+        <div class="text-center mb-8">
+          <h2 class="text-3xl font-bold text-gray-900 dark:text-white">Trusted by Clients Nationwide</h2>
+          <p class="mt-2 text-lg text-gray-600 dark:text-gray-300">Join the many satisfied clients who have realized their dream of living in the U.S. with the help of our experienced legal team.</p>
+        </div>
+      </div>  
+    </section>  
   </main>
 
 

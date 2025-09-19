@@ -36,10 +36,12 @@ type Props = {
                   },
                   index: number
                 ) => {
+                  // normalize href so 'project/one' -> '/project/one'
+                  const normalizedHref = value.href && !value.href.startsWith('/') && !value.href.startsWith('http') ? `/${value.href}` : value.href;
                   return (
                     <ProjectCard
                       projectTitle={value.projectTitle}
-                      href={value.href}
+                      href={normalizedHref}
                       body={value.about}
                       type={value.type}
                       repo={value.repo}

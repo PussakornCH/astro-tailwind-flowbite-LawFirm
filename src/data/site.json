@@ -46,36 +46,41 @@
   ],
   "projects": [
     {
-      "projectTitle": "Service 1",
+      "projectTitle": "Family-Based Petitions",
       "href": "project/one",
-      "about": "Database of books and reviews from users complete with auth and comments and so much more!!!",
-      "type": "Python, Django, HTML, CSS",
-      "repo": "https://github.com",
+      "about": "Assisting U.S. citizens and lawful permanent residents in petitioning for relatives.",
       "image": "https://flowbite.s3.amazonaws.com/blocks/marketing-ui/cta/cta-dashboard-mockup.svg"
     },
     {
-      "projectTitle": "Service 2",
+      "projectTitle": "Naturalization",
       "href": "project/two",
-      "about": "Video dashboard using JavaScript that allows user to build and share a layout of videos from YouTube.",
-      "repo": "https://github.com",
-      "type": "JavaScript, HTML, CSS",
+      "about": "Advising and representing lawful permanent residents in the citizenship process, including USCIS interviews.",
       "image": "../assets/screen2.png",
       "featured": true
     },
     {
-      "projectTitle": "Service 3",
+      "projectTitle": "Adjustment of Status",
       "href": "project/three",
-      "about": "Some info about this project here, please add something here for this project ok here.",
-      "type": "PHP, MySQL, HTML, CSS",
-      "repo": "https://github.com",
+      "about": "Representing clients in applications for lawful permanent residency within the U.S.",
       "image": "../assets/screen2.png"
     },
     {
-      "projectTitle": "Service 4",
+      "projectTitle": "Motions to Reopen",
       "href": "project/four",
-      "about": "Some info about project 4 I'm not sure haha ok see ya",
-      "type": "WordPress",
-      "repo": "https://github.com"
+      "about": "Preparing and filing motions when new facts or evidence warrant reconsideration of a prior decision.",
+      "image": "../assets/screen2.png"
+    },
+    {
+      "projectTitle": "Fluent in Tagalog / Filipino",
+      "href": "project/five",
+      "about":   "I can assist clients in both English and Tagalog/Filipino, making the process smoother for families more comfortable in their native language.",
+      "image": "../assets/screen2.png"
+    },
+    {
+      "projectTitle": "Ready to Represent You in Court",
+      "href": "project/six",
+      "about":   "Some lawyers only do paperwork. I can also represent you in front of a judge when needed.",
+      "image": "../assets/screen2.png"
     }
   ]
 }

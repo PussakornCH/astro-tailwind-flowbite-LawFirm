@@ -1,7 +1,7 @@
 {
   "owner": "Norah Vincent",
-  "siteName": "Law Firm of William Remo",
-  "siteDescription": "Comprehensive Immigration Legal Services for Families and Individuals",
+  "siteName": "Law Office of William L. Remo",
+  "siteDescription": "Build the Future in the US / Buuin ang Kinabukasan sa Estados Unidos",
   "about": "I am a Filipino American attorney who grew up in the Bay Area, and I bring both personal and professional experience to my practice.",
   "contact": {
     "email": "wlremo.law@gmail.com",
@@ -18,7 +18,7 @@
       "href": "/about"
     },
     {
-      "title": "Services", 
+      "title": "Services",
       "href": "/projects"
     },
     {

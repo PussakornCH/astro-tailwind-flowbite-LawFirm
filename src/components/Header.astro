@@ -3,7 +3,10 @@ import data from "../data/site.json";
 
 import Button from "../components/Button.astro";
 import ButtonAlt from "../components/ButtonAlt.astro";
-const title = "Trusted Immigration Attorney Serving Families and Individuals"
+const title = "Keep Family Together"
+const title2 = "Build Your Future in the US"
+const desc = "Magtulungan ang Pamilya"
+const desc2 = "Buuin ang Kinabukasan sa Estados Unidos"
 ---
 
 <div class="bg-gradient-to-b from-white dark:from-slate-600">
@@ -14,8 +17,16 @@ const title = "Trusted Immigration Attorney Serving Families and Individuals"
       >
         {title}
       </h1>
-      <p class="my-8 text-lg text-gray-700 dark:text-white">
-        {data.siteDescription}
+      <h1
+        class="text-4xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-6xl"
+      >
+        {title2}
+      </h1>
+      <p class="mt-8 mb-4 text-lg text-gray-700 dark:text-white">
+        {desc}
+      </p>
+      <p class="my-2 text-lg text-gray-700 dark:text-white">
+        {desc2}
       </p>
       <div class="mt-10 flex items-center justify-center gap-x-6">
         <Button text="Contact Us" href="/contact" />

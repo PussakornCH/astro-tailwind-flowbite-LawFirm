@@ -6,7 +6,7 @@
   "contact": {
     "email": "wlremo.law@gmail.com",
     "phone": "408-461-8871",
-    "address": "1234 Main St. Anytown, USA 12345"
+    "address": "500 E. Calaveras Blvd, Suite 349 Milpitas, CA 95035"
   },
   "pages": [
     {
@@ -18,16 +18,18 @@
       "href": "/about"
     },
     {
-      "title": "Services",
-      "href": "/projects"
-    },
-    {
       "title": "Testimonials",
       "href": "/testimonials"
     },
     {
       "title": "Contact",
       "href": "/contact"
+    }
+  ],
+  "pages_disabled": [
+    {
+      "title": "Services",
+      "href": "/projects"
     }
   ],
   "social": [
@@ -73,13 +75,13 @@
     {
       "projectTitle": "Fluent in Tagalog / Filipino",
       "href": "project/five",
-      "about":   "I can assist clients in both English and Tagalog/Filipino, making the process smoother for families more comfortable in their native language.",
+      "about": "I can assist clients in both English and Tagalog/Filipino, making the process smoother for families more comfortable in their native language.",
       "image": "../assets/screen2.png"
     },
     {
       "projectTitle": "Ready to Represent You in Court",
       "href": "project/six",
-      "about":   "Some lawyers only do paperwork. I can also represent you in front of a judge when needed.",
+      "about": "Some lawyers only do paperwork. I can also represent you in front of a judge when needed.",
       "image": "../assets/screen2.png"
     }
   ]

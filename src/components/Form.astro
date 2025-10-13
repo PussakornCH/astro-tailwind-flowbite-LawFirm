@@ -1,7 +1,8 @@
 ---
 import Button from '../components/Button.astro';
 import { Image } from 'astro:assets'; 
-import lightImage from "../assets/map.png"; 
+import lightImage from "../assets/Address_pic2.png"; 
+import darkImage from "../assets/Address_pic2.png"; 
 ---
 <form action="https://formsubmit.co/f5d5137abc6528676aeb272ce1899704" method="POST">
     <input type="hidden" name="_template" value="box">
@@ -30,6 +31,7 @@ import lightImage from "../assets/map.png";
   <section class="mb-12 bg-stone-100 dark:bg-slate-800">
     <div class="flex justify-center py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
         <Image src={lightImage} class="w-full dark:hidden border-solid border-2" alt="A description of my image." />
+        <Image src={darkImage} class="w-full hidden dark:block" alt="A description of my image." />
     </div>
   </section>
   
